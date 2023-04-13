@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+ 
+  <title>About us</title>
+  <link rel="stylesheet" href="styleProducts.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">;
+
+ </head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+        *{
+           padding:0;
+           margin: 0;
+           
+        }
+        body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #111; 
+}
+    header {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px 5px;
+    border-radius: 15px;
+  }
+  header nav ul li.active {
+    border: 1px solid #000;
+  }
+  header nav ul li a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    text-decoration: none;
+    color: #428bca;
+  }
+
+  header nav ul li.btn img {
+    width: 32;
+    height: 32px;
+  }
+header nav ul li.Home a {
+    display: flex;
+    align-items: center;
+  }
+  header nav ul li.Home a img {
+    margin-right: 5px;
+  }
+
+  /* HEADER -> SHOOPING BAG */
+  .shopping-bag {
+    padding: 10px 5px;
+    margin-left: 150px;
+  }
+  .shopping-bag a {
+    display: flex;
+    align-items: center;
+  }
+  .shopping-bag a img {
+    width: 32px;
+    height: 32px;
+  }
+  .shopping-bag .total-items-in-cart {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: rgb(242, 255, 58);
+    border-radius: 5px;
+  }
+
+
+       
+.home{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url(./background.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-top: 100PX;
+        }
+.home .content{
+    max-width: 600px;
+}
+.home .content h3{
+    max-width: 450px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 50px;
+    padding-bottom: 20px;
+
+}
+.home .content p{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.2;
+    padding-left:30px;
+    color:rgba(238, 238, 238, 0.858);
+    max-width: 600px;
+    padding-bottom: 20px;
+
+}
+.home .content a{
+    font-size: 20px;
+    background-color: rgba(236, 194, 115, 0.884);
+    color:#fff;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding: 5px 7px 7px 7px;
+
+}
+
+.home .content a:hover{
+    background-color: rgb(240, 177, 61);
+    font-weight: 1500%;
+    font-size: 25px;
+  
+}
+
+.heading{ 
+    text-align: center;
+    color:#111;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-block-end: 30px;
+    margin-block-start: 50px;
+}
+.heading span{
+    color:rgba(236, 194, 115, 0.884);
+    text-transform: uppercase;
+}
+
+.aboutus .row .image{
+   float:right;
+   width:40%;
+
+
+}
+.aboutus .row .image img{
+    width:100%;
+    max-height: 560px;
+
+}
+.aboutus .content .row  h4{
+    font-size: 55px;
+    color: #8d6f2b;
+    padding-left: 5px;
+    font-weight:500%;
+    margin-block-end: 30PX;
+    margin-block-start: 0;
+
+ 
+} 
+.aboutus .content .row  p{
+    font-size: 20px;
+    color: #111;
+    line-height: 1.8;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-indent: 30px;
+}
+.aboutus .content .row .word{
+    max-width: 60%;
+}
+
+
+.History .image2{
+   float:left;
+   width:58%;
+   padding-bottom: 0;
+
+}
+.History  .image2 img{
+    width:100%;
+    max-height: 560px;
+    padding-top: 100px;
+
+}
+
+.History  h5{
+    font-size: 40px;
+    color: #8d6f2b;
+    padding-left: 5px;
+    margin-block-start: 30PX;
+    margin-block-end: 0%;
+
+ 
+} 
+.History  p{
+    font-size: 20px;
+    color: #111;
+    line-height: 1.8;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-indent: 30px;
+}
+.History .word2{
+    max-width: 40%;
+    FLOAT: RIGHT;
+}
+
+    footer {
+    margin-top: 592px;
+    background-color:#222222;
+    
+  }
+  
+  footer ul {
+      list-style:none;
+      margin:0 auto;
+      display:inline-block;
+      padding-top:50px;
+  }
+  
+  footer ul li {
+      float:left;
+  }
+  
+  footer ul li a {
+    color:#b1aca1;
+      padding:20px;
+  }
+  
+  footer ul li a:hover {
+    color:#7dabdb;
+    text-decoration:none;
+  }
+  
+  .footer-top {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
+  .footer-top .fa {
+      font-size: 18px;
+      color: #FFF;
+      padding-right: 10px;
+  }
+  
+  .footer-top a {
+      color: #FFF;
+      text-decoration: none;
+      margin: auto 60px auto 60px;
+  }
+  
+  .footer-top .col-lg-2:hover .fa,
+  .footer-top .col-lg-2:hover a{
+      color: #7dabdb;
+  }
+  
+  .copyright {
+      background-color: #f0f0f0;
+      line-height: 30px;
+      padding:0;
+      margin: 0;
+  }
+  
+  .copyright p {
+    font-size: 12px;
+    padding: 0;
+    text-align: center;
+
+  }
+  
+  .footer-top .container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container1 .text-center{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+/*media queries */
+ @media screen (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        background-position: left;
+        justify-content:center;
+        text-align:center;
+    }
+    .home .content h3{
+        font-size:4.5rem;
+
+    }
+    .home .content p{
+        font-size:1.5rem;
+    }
+    .History,
+    .aboutus{
+        display: block;
+        margin: auto;
+        width:80%
+    }
+    .History .word2,
+    .aboutus .content .row .word{
+        float:none;
+        justify-content:center;
+        width:100%;
+        display:block;
+        margin: auto;
+        padding:0;
+        text-align: none;
+    }
+    .History .image2,
+    .aboutus .row .image {
+        float:none;
+        width: 100%;
+        margin-top: 50px;
+
+    }
+    .History .image2 img,
+    .aboutus .row .image img{
+        width: 100%;
+        height:auto;
+        display: block;
+        margin: auto;
+    }
+    .home .content h3{
+        text-align: center;
+        font-size: 30px;
+
+    }
+    .History h5,
+    .aboutus .content .row h4{
+        text-align: center;
+        font-size: 27px;
+        margin:auto;
+        padding:0;
+
+    }
+    
+
+
+
+@media screen (max-width:450px) {
+    html{
+        font-size:50%;
+    }
+}   
+}
+    </style> 
+     
+     <header>
+        <nav>
+            <ul>
+                <li class="btn Home">
+                    <a href="./">
+                        <img src="./icons/home.png" alt="">
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="products.html">
+                        Products
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        Login
+                    </a>
+                </li>
+    
+                <li>
+                    <div class="shopping-bag">
+                        <a href="#">
+                            <img src="./icons/bag.png" alt="cart">
+                            Cart
+                            <div class="total-items-in-cart">
+                                0
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+    
+    
+        </nav>
+    
+    
+    
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fashion and so much more </h3>
+            <p>We exists for the love of fashion. We believe in empowering individuality. 
+                Our mission is to be the global platform for luxury fashion, connecting creators, curators and consumers.</p>
+            <a href="#" class="btn">Get yours now</a> 
+        </div>
+    </section>
+    <div class="aboutus" id="aboutus">
+        <h1 class="heading"><span>about</span> us</h1>
+        <div class="content">
+            <div class="row">
+                <div class="image">
+                <img src="about.jpg" alt="">
+                </div>
+                <div class="word">
+            <h4>"What makes our clothes special?"</h4>
+            <p class="indent">We strive to be a global leader in T-shirts and fashion outerwear by empowering innovation and design to provide total customer satisfaction.
+               We strive to be a caring and well-managed organization for our business partners, customers and employees, and a responsible corporate citizen to our society.</p>
+            <p class="indent">To innovate, to lead, to enhance, to provide best-value products and services to global customers.
+
+                To make a difference through our branding to stay ahead of fashion trends, market changes and the latest technology.
+                
+                To enhance the quality of life for our business partners,customers and employees.</p>    
+            </div> 
+            </div>
+        </div>
+    
+            <div class="History">
+                <div class="image2">
+                    <img src="about2.png" at="">   
+                </div>
+                <div class="word2"> 
+                    <h5> "How does fashion represent our history?"</h5>
+                    <p>Founded in 2007 by José Neves for the love of fashion, and launched in 2008, we began as an e-commerce marketplace for luxury boutiques around the world. Today the Marketplace connects customers in over 190 countries and territories with items from more than 50 countries and over 1,400 of the world’s best brands, boutiques and department stores.</p>
+                </div>
+            </div>
+        </div>
+
+      
+    
+    <footer>
+        <div class="footer-top"> 
+           <div class="container">
+             <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+             </div>
+              <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+             </div>
+              <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+             </div>
+              <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+             </div>
+              <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+             </div>
+              <div class="col-lg-2 col-xs-12 text-center">
+                 <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+             </div>
+           </div> 
+        </div>  
+        
+        <div class="container1" style="border-top:1px solid grey;">
+            <div class="row text-center">   
+                <div class="col-lg-6 col-lg-offset-3">
+                    <ul class="menu">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                               
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                               
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                               
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                               
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <div class="copyright">
+       <div class="container">
+       
+         <div class="row text-center">
+             <p>Copyright © 2023 by Minh</p>
+         </div>
+         
+        </div>
+    </div>
+   
+</body>
+</html>
